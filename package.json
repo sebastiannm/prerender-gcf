@@ -1,0 +1,13 @@
+{
+  "name": "prerender",
+  "version": "0.0.1",
+  "engines": {
+    "node": ">=8"
+  },
+  "scripts": {
+    "deploy": "gcloud functions deploy prerender --trigger-http --runtime nodejs8 --memory 1024MB --region=europe-west1"
+  },
+  "dependencies": {
+    "puppeteer": "^1.9.0"
+  }
+}
